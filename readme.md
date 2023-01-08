@@ -1,0 +1,1 @@
+ทบทวน OOP Typescript
