@@ -40,3 +40,5 @@ class Main {
   new Main(dog)
   new Main(cat)
 })()
+
+export {}
