@@ -1,0 +1,3 @@
+Single Responsibility
+	class method หรือ module ต่าง ๆ ควรจะมีหน้าที่เดียว หรือมีเหตผลเดียวในการที่จะแก้ไขมัน
+
