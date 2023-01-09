@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ab": "ts-node src/abstraction.ts",
-    "en": "ts-node src/encapsulation.ts",
-    "in": "ts-node src/inheritance.ts",
-    "po": "ts-node src/polymorphism.ts",
+    "oop a": "ts-node src/oop/abstraction.ts",
+    "oop e": "ts-node src/oop/encapsulation.ts",
+    "oop i": "ts-node src/oop/inheritance.ts",
+    "oop p": "ts-node src/oop/polymorphism.ts",
     "start": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
