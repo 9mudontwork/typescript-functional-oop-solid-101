@@ -8,6 +8,35 @@ Functional programming
 
 	ง่ายต่อการ test และ debug
 
+	- pure function
+		คือการเขียนฟังก์ชัน รับตัวแปร ประมลผล และ return ออกไป จบงานได้ด้วยตัวมันเอง
+		หรือเรียกใช้ที่ไหนก็ได้ โดยไม่กระทบส่วนอื่น
+
+	- impure function
+			คือฟังก์ชันที่มีการ เรียกใช้ varialble หรือ function ภายนอก เมื่อมีการแก้ไขพวกนี้
+			จะกระทบ function ภายในด้วย
+
+	- imperative
+			ทำอะไร ให้ได้สิ่งนั้น ๆ มา โดยเขียนว่ามีขั้นตอนการทำงานอย่างไรบ้าง
+
+	- declarative
+			ทำอะไรให้ได้สิ่งนั้น โดยไม่จำเป็นต้องรู้ว่าทำอย่างไร
+
+	- primative types (pass by value)
+			string
+			number
+			boolean
+			null
+			undefined
+			symbol
+
+	- refence type (pass by reference)
+			object
+			array
+
+	- currying
+			function ที่ return function ออกไป
+
 OOP progrmaing
 	การเขียนโปรแกรมเชิงวัตถุ โดยการคิดว่า ของที่เราจะทำนั้นมีองค์ประกอบอะไรบ้าง
 	ของพวกนั้นมันทำอะไรไดบ้าง มีคุณสมบัติอะไรบ้าง และมันจะทำงานร่วมกันอย่างไร
