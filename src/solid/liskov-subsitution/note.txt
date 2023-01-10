@@ -1,2 +1,0 @@
-Liskov Subsitution
-	class ลูกทุกตัวทำหน้าที่แทน class แม่ได้

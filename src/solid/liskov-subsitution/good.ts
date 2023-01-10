@@ -1,4 +1,4 @@
-abstract class Shape {
+class Shape {
   width: number
   height: number
   getArea(): number {

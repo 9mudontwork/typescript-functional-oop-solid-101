@@ -1,8 +1,8 @@
 /**
  * implements สืบทอดมาบางส่วน ต้องเขียน methods ใหม่ให้ครบ
  *
- * abstract ใน typescript จะประกาศ interface เพื่อให้ class อื่นสืบทอดมาใช้
- * และเพื่อบอกว่า class นั้นจะต้องมี method นั้น ๆ ด้วย
+ * abstraction เป็นการประกาศหน้าตาของ class โดยไม่ต้องกำหนด method
+ * เพื่อนให้ class อื่น ๆ เอาไป implement method ต่อ
  */
 
 interface ICar {

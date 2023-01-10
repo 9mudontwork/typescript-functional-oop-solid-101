@@ -1,27 +1,18 @@
 /**
- * interface จะกลายเป็น real abstract อัตโนมัติ
- * และไม่สามารถกำหนดต้นแบบการทำงานได้
- * ใช้กับ implements
- *
- * abstract คล้าย interface เลย
- * แต่สามารถกำหนดต้นแบบการทำงานได้
- * และ override method ได้
- * ใช้กับ extends
- *
- *
- * ทั้งคู่เรียกใช้งานโดนตรงไม่ได้ ต้องเรียกใช้งานผ่านหลักการ inheritance
+ * class + interface คล้ายกับ abstract class
+ */
+
+/**
+ * - method ใน interface จะเป็น real abstract อัตโนมัติ
+ * - interface ไม่สามารถสร้าง constructor ได้
+ * - method ใน interface เป็น public อัตโนมัติ
+ * - class สามารถ implements ได้หลาย interface
+ * - กำหนดต้นแบบการทำงานไม่ได้
  */
 
 interface Animal {
   name: string
   makeSound(): void
-}
-
-abstract class Animal2 {
-  name: string
-  makeSound() {
-    console.log('no animal sound')
-  }
 }
 
 class Main implements Animal {
@@ -32,20 +23,52 @@ class Main implements Animal {
   }
 }
 
+/**
+ * - สามารถสร้าง method ที่เป็นทั้ง abstract และไม่ใช่ ได้
+ * - abstract class สามารถสร้าง constructor ได้
+ * - abstract class สามารถใช้ความสามารถ encapsulation ได้
+ * - class สามารถ extends ได้แค่ 1 abstract class
+ * - กำหนดต้นแบบการทำงานได้
+ */
+
+abstract class Animal2 {
+  protected name: string
+  makeSound() {
+    console.log('animal2')
+  }
+  constructor(name: string) {
+    this.name = name
+  }
+}
+
 class Main2 extends Animal2 {
   name: string
 
   makeSound() {
-    console.log('animal sound 2')
+    console.log(this.name)
   }
 }
 
 ;(() => {
   const main = new Main()
-  const main2 = new Main2()
-
+  const main2 = new Main2('cat')
   main.makeSound()
   main2.makeSound()
 })()
+
+/**
+ * interface ไม่สามารถใช้ instanceof ได้
+ * https://stackoverflow.com/a/50113607/13161255
+ */
+
+// let x: any
+
+// if (x instanceof Animal) {
+//   // Error: 'IPerson' only refers to a type, but is being used as a value here.
+// }
+
+// if (x instanceof Animal2) {
+//   // OK
+// }
 
 export {}

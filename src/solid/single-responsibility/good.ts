@@ -1,4 +1,8 @@
-export class UserAccount2 {
+/**
+ * แยก sendEmail ซึ่งไม่เกี่ยวข้อง กับ UserAccount ออก
+ */
+
+export class UserAccount {
   username: string
   password: string
 
@@ -24,3 +28,5 @@ class EmailService {
     // send email
   }
 }
+
+export {}

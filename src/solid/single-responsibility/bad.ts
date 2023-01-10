@@ -27,3 +27,5 @@ export class UserAccount {
     // send email
   }
 }
+
+export {}

@@ -1,5 +1,7 @@
 /**
- * function มีการรับค่า และดำเนินการภายในฟังก์ชัน และ return ค่าออกมา
+ * - function มีการรับค่า
+ * - ดำเนินการภายในฟังก์ชัน
+ * - return ค่าออกมา
  */
 
 function plus(number1: number, number2: number) {

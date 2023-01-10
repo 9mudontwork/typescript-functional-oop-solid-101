@@ -1,5 +1,0 @@
-dependency inversion
-	- ของที่เป็น hight level module ไม่ควรผูกติดกับ low level module โดยตรง แต่ควรรู้จักกันผ่าน abstraction
-	-	abstraction ไม่ควรรู้รายละเอียดการทำงาน แต่โค้ดที่ทำงานที่แท้จริงต้องทำตามที่ abstraction วางไว้
-	- hight level module คือคนคุมงาน
-	- low level module คือคนงาน

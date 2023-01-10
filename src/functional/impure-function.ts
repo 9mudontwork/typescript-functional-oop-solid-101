@@ -1,6 +1,6 @@
 /**
- * function มีการเกิด side effect
- * หรือใน function มีการเรียกใช้ ตัวแปร หรือ function ภายนอก
+ * - function มีการเกิด side effect
+ * - หรือใน function มีการเรียกใช้ ตัวแปร หรือ function ภายนอก
  */
 
 const indicator = 2

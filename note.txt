@@ -29,7 +29,7 @@ OOP progrmaing
 				class ลูกยังสามารถ override method เพื่อเปลี่ยนแปลงการทำงานได้
 
 
-Summary
+Functionnal VS OOP
 	Functional
 		- จะโฟกัสที่การ transform ข้อมูล
 		- code reuse ยากกว่า oop
@@ -46,11 +46,28 @@ SOLID
 	คือหลักการการออกแบบการเขียนโปรแกรม เพื่อให้เข้าใจง่าย และมีความยืดหยุ่นสูง
 
 	- Single Responsibility
-			class method หรือ module ต่าง ๆ ควรจะมีหน้าที่เดียว หรือมีเหตผลเดียวในการที่จะแก้ไขมัน
+			class method module ต่าง ๆ หรือ อื่น ๆ ควรจะมีหน้าที่เดียว หรือมีเหตผลเดียวในการที่จะแก้ไขมัน
 
 	- Open-closed principle
-			คือกรออกของ class function หรืออื่น ๆ ให้สามารถเพิ่มความสามารถอื่น ๆ ได้ แต่ต้องไม่แก้โค้ดเดิม
+			คือการออกแบบ class function หรืออื่น ๆ ให้สามารถเพิ่มความสามารถอื่น ๆ ได้ แต่ต้องไม่แก้โค้ดเดิม
 			สามารถใช้หลักการ abstraction เข้ามาช่วยในการออกแบบได้
+
+	- Liskov Subsitution
+			class ลูกสามารถทำหน้าที่แทน class แม่ได้ อย่างเหมาะสม
+
+	- Interface Segregation
+			โค้ดไม่ควรจะถูกบังคับให้มี method ที่ไม่ได้ใช้ ไม่ว่าจะมาจากการ implements หรือ base class ก็ตาม
+			เพราะว่า
+			- โค้ดจะมีความยุ่งเหยิง แก้ตรงนี้กระทบตรงนู้น และเพิ่มความซับซ้อนให้กับโค้ด
+			- ลดความเป็น single responsibility
+			- โค้ดแก้ไขต่อเติมยาก
+			- มีโอกาสแก้ไขผิดวิธี ออกนอกลู่นอกทางไปเรื่อย
+
+	- Dependency Inversion
+			- ของที่เป็น hight level module ไม่ควรผูกติดกับ low level module โดยตรง แต่ควรรู้จักกันผ่าน abstraction
+			-	abstraction ไม่ควรรู้รายละเอียดการทำงาน แต่โค้ดที่ทำงานที่แท้จริงต้องทำตามที่ abstraction วางไว้
+			- hight level module คือคนคุมงาน
+			- low level module คือคนงาน
 
 
 
