@@ -2,6 +2,7 @@ Typescript  Concept
 
 ```javascript
 https://www.codecademy.com/resources/docs/typescript/about-typescript
+https://javascript.plainenglish.io/master-the-typescript-keyof-type-operator-bf7f18865a8b
 ```
 
 
