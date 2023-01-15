@@ -55,8 +55,8 @@ class PickupFactory implements IVehicleFactory {
   }
 
   function getVehicle(vehicleType: keyof typeof VehicleType) {
-    const Vehicle = factoryList[vehicleType]
-    return new Vehicle().getVehicle()
+    const vehicle = new factoryList[vehicleType]()
+    return vehicle.getVehicle()
   }
 
   const suv = getVehicle(VehicleType.SUV)
