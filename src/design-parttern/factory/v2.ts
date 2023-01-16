@@ -46,15 +46,12 @@ class PickupFactory implements IVehicleFactory {
 }
 
 ;(() => {
-  const factoryList: Record<
-    keyof typeof VehicleType,
-    new () => IVehicleFactory
-  > = {
+  const factoryList: Record<VehicleType, new () => IVehicleFactory> = {
     [VehicleType.SUV]: SuvFactory,
     [VehicleType.PICKUP]: PickupFactory,
   }
 
-  function getVehicle(vehicleType: keyof typeof VehicleType) {
+  function getVehicle(vehicleType: VehicleType): IVehicle {
     const vehicle = new factoryList[vehicleType]()
     return vehicle.getVehicle()
   }

@@ -3,6 +3,13 @@ export {}
 /**
  * lazy
  * เรียกใช้ถึงจะ new instance
+ *
+ * pros
+ * 	-	ไม่เสียเวลาเริ่มต้นในการทำงาน
+ * 	-	ไม่เปลือง memory
+ *
+ * cons
+ * 	-	ถ้าการทำงานมีเยอะ มีโอกาสที่จะสร้าง instance พร้อมกัน
  */
 
 class Car {
@@ -27,6 +34,14 @@ class Car {
 /**
  * eary
  * เรียกใช้แต่แรก
+ *
+ * pros
+ * 	-	พร้อมใช้งานทันที
+ * 	-	ไม่มีปัญหาเรื่องสร้าง instance พร้อมกัน
+ *
+ * cons
+ * 	-	เสียเวลาเริ่มต้นในการทำงานแทน
+ * 	-	เปลือง memory เพราะ object นั้น ๆ อาจจะไม่ได้ถูกใช้งานเลย
  */
 
 class Car2 {
@@ -76,4 +91,6 @@ class Car3 {
   const car4 = Car.getInstance()
 
   console.log(car3 === car4)
+
+  Car3.Instance.log()
 })()
