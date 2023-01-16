@@ -16,10 +16,8 @@ class Model {
   }
 }
 
-class View {
-  updateUserData(userData: PartialUserData): void {
-    console.log(userData)
-  }
+interface View {
+  updateUserData(userData: PartialUserData): void
 }
 
 class Presenter {
@@ -42,10 +40,16 @@ class Presenter {
   }
 }
 
+class Main implements View {
+  updateUserData(userData: PartialUserData): void {
+    console.log(userData)
+  }
+}
+
 ;(() => {
-  const view = new View()
+  const main = new Main()
   const model = new Model()
-  const presenter = new Presenter(view, model)
+  const presenter = new Presenter(main, model)
 
   presenter.updateModel({ username: 'dog' })
 })()

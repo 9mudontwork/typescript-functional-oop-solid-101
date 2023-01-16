@@ -63,23 +63,23 @@ class Car2 {
  * ????
  */
 
-class Car3 {
-  private static instance: Car3
+// class Car3 {
+//   private static instance: Car3
 
-  static get Instance(): Car3 {
-    return Car3.instance
-  }
+//   static get Instance(): Car3 {
+//     return Car3.instance
+//   }
 
-  protected constructor() {
-    if (!Car3.instance) {
-      Car3.instance = new Car3()
-    }
-  }
+//   protected constructor() {
+//     if (!Car3.instance) {
+//       Car3.instance = new Car3()
+//     }
+//   }
 
-  log(): void {
-    console.log('log')
-  }
-}
+//   log(): void {
+//     console.log('log')
+//   }
+// }
 
 ;(() => {
   const car = new Car()
@@ -91,6 +91,4 @@ class Car3 {
   const car4 = Car.getInstance()
 
   console.log(car3 === car4)
-
-  Car3.Instance.log()
 })()
