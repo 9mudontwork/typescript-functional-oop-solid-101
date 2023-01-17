@@ -1,3 +1,5 @@
+zip mergeMap debounce throttle subject map
+
 rxjs
 	คือ lib ช่วยในการเขียน reactive programing ใช้ observables (เฝ้าดู)
 	เพื่อให้ง่ายต่อการเขียน asynchronouse หรือ callback
